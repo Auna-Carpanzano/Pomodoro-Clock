@@ -39,3 +39,8 @@ button {
 #reset, #start {
   margin: 0;
 }
+
+button:focus {
+  outline: 2px solid black;
+}
+
