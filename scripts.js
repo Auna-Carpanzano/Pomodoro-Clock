@@ -5,8 +5,10 @@ $(document).ready(function () {
 
   //Break buttons
   $("#breakMinus").click(function () {
-    breakCount = breakCount - 1;
-    $("#breakNum").html(breakCount);
+    if(breakCount > 1) {
+      breakCount = breakCount - 1;
+      $("#breakNum").html(breakCount);
+    }
   });
 
 }); //End document ready function
