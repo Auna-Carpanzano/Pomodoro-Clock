@@ -24,4 +24,9 @@ $(document).ready(function () {
     }
   });
 
+  $("#sessionPlus").click(function () {
+    sessionCount = sessionCount + 1;
+    $("#sessionNum").html(sessionCount);
+  });
+
 }); //End document ready function
