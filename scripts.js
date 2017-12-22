@@ -29,4 +29,12 @@ $(document).ready(function () {
     $("#sessionNum").html(sessionCount);
   });
 
+  //Reset button before start
+  $("#reset").click(function(){
+    sessionCount=25;
+    breakCount=5;
+    $("#sessionNum").text(sessionCount);
+    $("#breakNum").text(breakCount);
+  });
+
 }); //End document ready function
