@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <audio id="alarm" src="http://res.cloudinary.com/dvmwlh9xp/video/upload/v1511553381/Japanese_Temple_Bell_Small-SoundBible.com-113624364_ngrdbr.mp3" type="audio/mpeg"></audio>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Pomodoro Clock</h1>
+  <h2 id="timeType" class="space"></h2>
+  <div class="space">
+    <h3 id="sessionTitle">SESSION LENGTH</h3>
+    <button id="sessionMinus">
+      <i class="fa fa-minus" aria-hidden="true"></i>
+    </button>
+    <h3 id="sessionNum">25</h3>
+    <button id="sessionPlus">
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="space">
+    <h3 id="breakTitle">BREAK LENGTH</h3>
+    <button id="breakMinus">
+      <i class="fa fa-minus" aria-hidden="true"></i>
+    </button>
+    <h3 id="breakNum">5</h3>
+    <button id="breakPlus">
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="space">
+    <button id="start">START</button>
+    <button id="reset">RESET</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
