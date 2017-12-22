@@ -45,6 +45,9 @@ $(document).ready(function () {
 
     function timer(){
       $("#start, #sessionMinus, #sessionPlus, #breakPlus, #breakMinus, #breakNum, #sessionTitle, #breakTitle").hide();
+      //Allow timeType to show again after reset
+      $("#timeType").show();
+      $("#timeType").html("Session time: ");
     }
   }); //End start button
 
