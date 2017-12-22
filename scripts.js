@@ -16,4 +16,10 @@ $(document).ready(function () {
     $("#breakNum").html(breakCount);
   });
 
+  //Session buttons
+  $("#sessionMinus").click(function () {
+    sessionCount = sessionCount - 1;
+    $("#sessionNum").html(sessionCount);
+  });
+
 }); //End document ready function
