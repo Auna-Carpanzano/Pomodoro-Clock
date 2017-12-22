@@ -11,4 +11,9 @@ $(document).ready(function () {
     }
   });
 
+  $("#breakPlus").click(function () {
+    breakCount = breakCount + 1;
+    $("#breakNum").html(breakCount);
+  });
+
 }); //End document ready function
