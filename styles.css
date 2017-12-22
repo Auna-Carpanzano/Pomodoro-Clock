@@ -35,3 +35,7 @@ button {
   margin: 30px;
   padding: 10px;
 }
+
+#reset, #start {
+  margin: 0;
+}
