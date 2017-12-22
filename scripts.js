@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   //Start button
   $("#start").click(function () {
-
+    sessionCount = sessionCount * 60;
   }); //End start button
 
 }); //End document ready function
