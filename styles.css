@@ -25,5 +25,5 @@ body {
 #sessionTitle, #breakTitle, #timeType, #reset, #start {
   font-size: 22px;
   text-transform: uppercase;
-
+  letter-spacing: 2px;
 }
