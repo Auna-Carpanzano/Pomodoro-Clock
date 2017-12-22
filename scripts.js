@@ -18,8 +18,10 @@ $(document).ready(function () {
 
   //Session buttons
   $("#sessionMinus").click(function () {
-    sessionCount = sessionCount - 1;
-    $("#sessionNum").html(sessionCount);
+    if(sessionCount > 1) {
+      sessionCount = sessionCount - 1;
+      $("#sessionNum").html(sessionCount);
+    }
   });
 
 }); //End document ready function
