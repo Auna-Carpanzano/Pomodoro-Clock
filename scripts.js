@@ -42,6 +42,10 @@ $(document).ready(function () {
     sessionCount = sessionCount * 60;
     breakCount = breakCount * 60;
     var counter= setInterval(timer, 1000);
+
+    function timer(){
+
+    }
   }); //End start button
 
 }); //End document ready function
