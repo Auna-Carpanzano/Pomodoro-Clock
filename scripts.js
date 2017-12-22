@@ -30,9 +30,9 @@ $(document).ready(function () {
   });
 
   //Reset button before start
-  $("#reset").click(function(){
-    sessionCount=25;
-    breakCount=5;
+  $("#reset").click(function () {
+    sessionCount = 25;
+    breakCount = 5;
     $("#sessionNum").text(sessionCount);
     $("#breakNum").text(breakCount);
   });
