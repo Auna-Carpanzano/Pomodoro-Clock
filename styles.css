@@ -23,5 +23,5 @@ body {
 }
 
 #sessionTitle, #breakTitle, #timeType, #reset, #start {
-
+  font-size: 22px;
 }
