@@ -37,4 +37,9 @@ $(document).ready(function () {
     $("#breakNum").text(breakCount);
   });
 
+  //Start button
+  $("#start").click(function () {
+
+  }); //End start button
+
 }); //End document ready function
