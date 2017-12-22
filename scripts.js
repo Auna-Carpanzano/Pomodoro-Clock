@@ -44,7 +44,7 @@ $(document).ready(function () {
     var counter= setInterval(timer, 1000);
 
     function timer(){
-
+      $("#start, #sessionMinus, #sessionPlus, #breakPlus, #breakMinus, #breakNum, #sessionTitle, #breakTitle").hide();
     }
   }); //End start button
 
