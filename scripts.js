@@ -85,7 +85,8 @@ $(document).ready(function () {
 
       //Reset button after start is pressed
       $("#reset").click(function(){
-
+        clearInterval(counter);
+        clearInterval(startBreak);
       });
     } //End timer function
   }); //End start button
