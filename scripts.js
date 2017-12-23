@@ -58,6 +58,7 @@ $(document).ready(function () {
       sessionCount = sessionCount - 1;
       if(sessionCount===0){
         alarm.play();
+        clearInterval(counter);
       } //End if
     } //End timer function
   }); //End start button
