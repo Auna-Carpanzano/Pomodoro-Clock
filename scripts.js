@@ -31,6 +31,7 @@ $(document).ready(function () {
 
   //Reset button before start
   $("#reset").click(function () {
+    $("body").toggleClass("gradient");
     sessionCount = 25;
     breakCount = 5;
     $("#sessionNum").text(sessionCount);
