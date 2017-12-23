@@ -56,10 +56,11 @@ $(document).ready(function () {
         $("#sessionNum").html(Math.floor(sessionCount/60)+":"+"0"+sessionCount%60);
       }
       sessionCount = sessionCount - 1;
-      if(sessionCount===0){
+      if (sessionCount===0) {
         alarm.play();
         clearInterval(counter);
         $("#sessionNum").hide();
+        var startBreak = setInterval(breakTime, 1000);
       } //End if
     } //End timer function
   }); //End start button
