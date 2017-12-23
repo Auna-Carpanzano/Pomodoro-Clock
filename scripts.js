@@ -86,6 +86,7 @@ $(document).ready(function () {
 
       //Reset button after start is pressed
       $("#reset").click(function () {
+        $("body").toggleClass("gradient");
         clearInterval(counter);
         clearInterval(startBreak);
         $("#timeType").hide();
