@@ -59,6 +59,7 @@ $(document).ready(function () {
       if(sessionCount===0){
         alarm.play();
         clearInterval(counter);
+        $("#sessionNum").hide();
       } //End if
     } //End timer function
   }); //End start button
