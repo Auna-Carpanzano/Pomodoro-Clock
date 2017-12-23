@@ -43,11 +43,19 @@ $(document).ready(function () {
     breakCount = breakCount * 60;
     var counter= setInterval(timer, 1000);
 
-    function timer(){
+    function timer () {
       $("#start, #sessionMinus, #sessionPlus, #breakPlus, #breakMinus, #breakNum, #sessionTitle, #breakTitle").hide();
       //Allow timeType to show again after reset
       $("#timeType").show();
       $("#timeType").html("Session time: ");
+      //Formats sessionCount to minutes:seconds
+      if (sessionCount%60 >= 10) {
+        $("#sessionNum").html(Math.floor(sessionCount/60)+":"+sessionCount%60);
+      }
+      else {
+        $("#sessionNum").html(Math.floor(sessionCount/60)+":"+"0"+sessionCount%60);
+      }
+
     }
   }); //End start button
 
