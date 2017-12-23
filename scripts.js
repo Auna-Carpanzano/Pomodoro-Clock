@@ -92,6 +92,7 @@ $(document).ready(function () {
         breakCount=5;
         $("#sessionNum").html(sessionCount);
         $("#breakNum").html(breakCount);
+        $("#start, #sessionMinus, #sessionPlus, #breakPlus, #breakMinus, #breakNum, #sessionNum, #sessionTitle, #breakTitle").show();
       });
     } //End timer function
   }); //End start button
