@@ -87,6 +87,7 @@ $(document).ready(function () {
       $("#reset").click(function(){
         clearInterval(counter);
         clearInterval(startBreak);
+        $("#timeType").hide();
         sessionCount=25;
         breakCount=5;
         $("#sessionNum").html(sessionCount);
