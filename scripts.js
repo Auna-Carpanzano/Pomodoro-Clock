@@ -87,6 +87,8 @@ $(document).ready(function () {
       $("#reset").click(function(){
         clearInterval(counter);
         clearInterval(startBreak);
+        sessionCount=25;
+        breakCount=5;
       });
     } //End timer function
   }); //End start button
