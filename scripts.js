@@ -65,6 +65,7 @@ $(document).ready(function () {
 
       function breakTime () {
         $("#timeType").html("Break time: ");
+        $("#breakNum").show();
         //Format breakCount to minutes:seconds
         if (breakCount%60 >= 10) {
           $("#breakNum").html(Math.floor(breakCount/60)+":"+breakCount%60);
