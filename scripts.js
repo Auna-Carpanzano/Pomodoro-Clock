@@ -72,6 +72,7 @@ $(document).ready(function () {
         if (breakCount===0) {
           clearInterval(startBreak);
           alarm.play();
+          $("#breakNum, #timeType").hide();
         } //End if
         //Format breakCount to minutes:seconds
         if (breakCount%60 >= 10) {
