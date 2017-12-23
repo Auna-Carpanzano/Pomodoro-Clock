@@ -41,7 +41,7 @@ $(document).ready(function () {
   $("#start").click(function () {
     sessionCount = sessionCount * 60;
     breakCount = breakCount * 60;
-    var counter= setInterval(timer, 1000);
+    var counter = setInterval(timer, 1000);
 
     function timer () {
       $("#start, #sessionMinus, #sessionPlus, #breakPlus, #breakMinus, #breakNum, #sessionTitle, #breakTitle").hide();
@@ -84,17 +84,16 @@ $(document).ready(function () {
       } //End breakTime function
 
       //Reset button after start is pressed
-      $("#reset").click(function(){
+      $("#reset").click(function () {
         clearInterval(counter);
         clearInterval(startBreak);
         $("#timeType").hide();
-        sessionCount=25;
-        breakCount=5;
+        sessionCount = 25;
+        breakCount = 5;
         $("#sessionNum").html(sessionCount);
         $("#breakNum").html(breakCount);
         $("#start, #sessionMinus, #sessionPlus, #breakPlus, #breakMinus, #breakNum, #sessionNum, #sessionTitle, #breakTitle").show();
       });
     } //End timer function
   }); //End start button
-
 }); //End document ready function
