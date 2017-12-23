@@ -71,6 +71,7 @@ $(document).ready(function () {
         breakCount = breakCount - 1;
         if (breakCount===0) {
           clearInterval(startBreak);
+          alarm.play();
         } //End if
         //Format breakCount to minutes:seconds
         if (breakCount%60 >= 10) {
