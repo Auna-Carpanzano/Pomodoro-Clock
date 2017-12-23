@@ -56,6 +56,9 @@ $(document).ready(function () {
         $("#sessionNum").html(Math.floor(sessionCount/60)+":"+"0"+sessionCount%60);
       }
       sessionCount = sessionCount - 1;
+      if(sessionCount===0){
+
+      } //End if
 
     }
   }); //End start button
