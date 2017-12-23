@@ -31,6 +31,7 @@ $(document).ready(function () {
 
   //Reset button before start
   $("#reset").click(function () {
+    $("body").toggleClass("gradient");
     sessionCount = 25;
     breakCount = 5;
     $("#sessionNum").text(sessionCount);
@@ -39,6 +40,7 @@ $(document).ready(function () {
 
   //Start button
   $("#start").click(function () {
+    $("body").toggleClass("gradient");
     sessionCount = sessionCount * 60;
     breakCount = breakCount * 60;
     var counter = setInterval(timer, 1000);
@@ -85,6 +87,7 @@ $(document).ready(function () {
 
       //Reset button after start is pressed
       $("#reset").click(function () {
+        $("body").toggleClass("gradient");
         clearInterval(counter);
         clearInterval(startBreak);
         $("#timeType").hide();
