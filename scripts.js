@@ -82,6 +82,11 @@ $(document).ready(function () {
           $("#breakNum").html(Math.floor(breakCount/60)+":"+"0"+breakCount%60);
         }
       } //End breakTime function
+
+      //Reset button after start is pressed
+      $("#reset").click(function(){
+
+      });
     } //End timer function
   }); //End start button
 
