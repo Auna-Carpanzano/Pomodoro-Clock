@@ -62,6 +62,15 @@ $(document).ready(function () {
         $("#sessionNum").hide();
         var startBreak = setInterval(breakTime, 1000);
       } //End if
+
+      //Format breakCount to minutes:seconds
+      if (breakCount%60 >= 10) {
+        $("#breakNum").html(Math.floor(breakCount/60)+":"+breakCount%60);
+      }
+      else {
+        $("#breakNum").html(Math.floor(breakCount/60)+":"+"0"+breakCount%60);
+      }
+
     } //End timer function
   }); //End start button
 
