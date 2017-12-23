@@ -64,6 +64,8 @@ $(document).ready(function () {
       } //End if
 
       function breakTime () {
+        //Allow timeType to show again after reset
+        $("#timeType").show();
         $("#timeType").html("Break time: ");
         $("#breakNum").show();
         //Format breakCount to minutes:seconds
