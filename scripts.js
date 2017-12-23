@@ -57,10 +57,9 @@ $(document).ready(function () {
       }
       sessionCount = sessionCount - 1;
       if(sessionCount===0){
-
+        alarm.play();
       } //End if
-
-    }
+    } //End timer function
   }); //End start button
 
 }); //End document ready function
